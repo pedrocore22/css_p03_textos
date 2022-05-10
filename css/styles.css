@@ -1,0 +1,61 @@
+/* Implementación de fuente interna */
+/* (los más recomendables son archivos .ttf) */
+
+@font-face {
+    font-family: 'badabb';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/BADABB__.TTF');
+}
+
+/* Implementación de fuente externa */
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*::selection {
+    background-color: #de1c85;
+    color: white;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #616161;
+}
+
+h1 {
+    font-size: 38px;
+    font-family: 'badabb', sans-serif;
+    color: #565656;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.cita {
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    color: crimson;
+}
+
+/* Sombreado de textos */
+
+.sombreado {
+    font-size: 36px;
+    text-shadow: 2px -2px 4px grey;
+}
+
+/* Subrayado de textos */
+
+.subrayado {
+    /* text-decoration-line: underline;
+    text-decoration-color: orangered;
+    text-decoration-style: wavy;
+    Hay propiedades llamadas shorthand que permiten declarar
+    varias propiedades en una sola */
+    text-decoration: underline orangered wavy;
+}
